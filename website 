@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Expert Appliance Care | এক্সপার্ট অ্যাপ্লায়েন্স কেয়ার</title>
+<meta name="description" content="Repair and service for refrigerators, air conditioners, washing machines and TVs in Narayangonj.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2545;
+  --blue:#1D5FD1;
+  --silver:#C9D1DB;
+  --mist:#F2F5F9;
+  --white:#FFFFFF;
+  --ink:#13223A;
+  --muted:#51607A;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Hind Siliguri",system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:"Source Serif 4","Hind Siliguri",Georgia,serif;line-height:1.2;color:var(--navy)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* language switching */
+[data-lang="bn"] .en,[data-lang="en"] .bn{display:none}
+
+header{position:sticky;top:0;z-index:10;background:var(--white);border-bottom:1px solid var(--silver)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand b{font-family:"Source Serif 4",serif;font-size:19px;color:var(--navy);line-height:1.1;display:block}
+.brand span{font-size:13px;color:var(--muted);letter-spacing:.02em}
+nav{display:flex;align-items:center;gap:22px}
+nav a{text-decoration:none;font-weight:500;color:var(--muted);font-size:15px}
+nav a:hover{color:var(--blue)}
+.lang{display:inline-flex;border:1px solid var(--silver);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--navy);color:var(--white)}
+
+.hero{background:var(--navy);color:var(--white);padding:84px 0 92px;position:relative;overflow:hidden}
+.hero h1{color:var(--white);font-size:clamp(34px,6vw,58px);max-width:15em}
+.hero p{margin-top:20px;max-width:34em;color:#D5DEEB;font-size:19px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-block;padding:13px 26px;border-radius:6px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.primary{background:var(--white);color:var(--navy)}
+.btn.primary:hover{background:var(--silver)}
+.btn.ghost{border:1.5px solid var(--silver);color:var(--white)}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.hero .mark{position:absolute;right:-60px;bottom:-70px;width:420px;opacity:.09;pointer-events:none}
+
+section{padding:76px 0}
+section h2{font-size:clamp(26px,4vw,36px);margin-bottom:10px}
+.lead{color:var(--muted);max-width:36em;margin-bottom:36px}
+
+.services{background:var(--mist)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.svc{background:var(--white);border:1px solid var(--silver);border-radius:8px;padding:26px}
+.svc svg{width:40px;height:40px;stroke:var(--blue);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
+.svc h3{font-size:20px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:15.5px}
+
+.why ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.why li{display:flex;gap:14px;align-items:flex-start}
+.why li svg{flex:none;width:26px;height:26px;margin-top:3px;stroke:var(--blue);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.why li b{display:block;color:var(--navy)}
+.why li span{color:var(--muted);font-size:15.5px}
+
+.contact{background:var(--navy);color:var(--white)}
+.contact h2{color:var(--white)}
+.contact .lead{color:#D5DEEB}
+.rows{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.rows div{border-top:1px solid #35507A;padding-top:14px}
+.rows small{display:block;color:#A9B8CF;font-size:14px}
+.rows a,.rows p{font-size:19px;font-weight:500;text-decoration:none}
+.rows a:hover{text-decoration:underline}
+
+footer{padding:26px 0;font-size:14px;color:var(--muted);border-top:1px solid var(--silver)}
+
+@media (max-width:720px){
+  nav a{display:none}
+  .hero{padding:56px 0 64px}
+  section{padding:54px 0}
+  .hero .mark{width:260px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body data-lang="en">
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Expert Appliance Care">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 3 6 17v26h36V17z" fill="none" stroke="#0B2545" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M24 12 15 19v10c0 6 4.5 10 9 12 4.5-2 9-6 9-12V19z" fill="#1D5FD1"/>
+        <path d="m19 26 4 4 7-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <b>Expert</b>
+        <span>Appliance Care</span>
+      </div>
+    </a>
+    <nav>
+      <a href="#services"><span class="en">Services</span><span class="bn">সেবাসমূহ</span></a>
+      <a href="#why"><span class="en">Why us</span><span class="bn">কেন আমরা</span></a>
+      <a href="#contact"><span class="en">Contact</span><span class="bn">যোগাযোগ</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set="en" aria-pressed="true">EN</button>
+        <button type="button" data-set="bn" aria-pressed="false">বাংলা</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3 6 17v26h36V17z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/><path d="M24 12 15 19v10c0 6 4.5 10 9 12 4.5-2 9-6 9-12V19z" fill="#fff"/></svg>
+    <div class="wrap">
+      <h1>
+        <span class="en">Your home appliances, repaired right.</span>
+        <span class="bn">আপনার ঘরের যন্ত্র, সঠিকভাবে মেরামত।</span>
+      </h1>
+      <p>
+        <span class="en">Expert Appliance Care repairs and services refrigerators, air conditioners, washing machines and TVs with trained technicians.</span>
+        <span class="bn">এক্সপার্ট অ্যাপ্লায়েন্স কেয়ার প্রশিক্ষিত টেকনিশিয়ান দিয়ে ফ্রিজ, এসি, ওয়াশিং মেশিন ও টিভি মেরামত ও সার্ভিসিং করে।</span>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#contact"><span class="en">Book a service</span><span class="bn">সার্ভিস বুক করুন</span></a>
+        <a class="btn ghost" href="#services"><span class="en">See what we repair</span><span class="bn">কী কী মেরামত করি</span></a>
+      </div>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2><span class="en">What we repair</span><span class="bn">আমরা যা মেরামত করি</span></h2>
+      <p class="lead">
+        <span class="en">Four types of appliances, one service team.</span>
+        <span class="bn">চার ধরনের যন্ত্র, একই সার্ভিস টিম।</span>
+      </p>
+      <div class="grid">
+        <article class="svc">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="9" y="3" width="22" height="34" rx="3"/><path d="M9 15h22M14 8v3M14 20v6"/></svg>
+          <h3><span class="en">Refrigerator &amp; freezer</span><span class="bn">ফ্রিজ ও ফ্রিজার</span></h3>
+          <p><span class="en">Cooling problems, gas refill, compressor and thermostat repair.</span><span class="bn">কুলিং সমস্যা, গ্যাস রিফিল, কম্প্রেসর ও থার্মোস্ট্যাট মেরামত।</span></p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="8" width="34" height="12" rx="3"/><path d="M9 16h22M10 26c0 3-2 4-2 7M20 26c0 3-2 4-2 7M30 26c0 3-2 4-2 7"/></svg>
+          <h3><span class="en">Air conditioner</span><span class="bn">এয়ার কন্ডিশনার (এসি)</span></h3>
+          <p><span class="en">Servicing, gas charging, installation and fault repair.</span><span class="bn">সার্ভিসিং, গ্যাস চার্জ, ইনস্টলেশন ও ত্রুটি মেরামত।</span></p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="3" width="28" height="34" rx="3"/><circle cx="20" cy="23" r="8"/><path d="M11 9h4M24 9h5"/></svg>
+          <h3><span class="en">Washing machine</span><span class="bn">ওয়াশিং মেশিন</span></h3>
+          <p><span class="en">Drum, motor, drain and control board problems.</span><span class="bn">ড্রাম, মোটর, ড্রেন ও কন্ট্রোল বোর্ডের সমস্যা।</span></p>
+        </article>
+        <article class="svc">
+          <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="3" y="7" width="34" height="22" rx="3"/><path d="M14 35h12M20 29v6"/></svg>
+          <h3><span class="en">TV &amp; electronics</span><span class="bn">টিভি ও ইলেকট্রনিক্স</span></h3>
+          <p><span class="en">Display, power, sound and board-level repair.</span><span class="bn">ডিসপ্লে, পাওয়ার, সাউন্ড ও বোর্ড মেরামত।</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="wrap">
+      <h2><span class="en">Why customers choose us</span><span class="bn">গ্রাহকরা কেন আমাদের বেছে নেন</span></h2>
+      <p class="lead">
+        <span class="en">Over ten years of service experience behind every job.</span>
+        <span class="bn">প্রতিটি কাজের পেছনে রয়েছে ১০ বছরের বেশি সার্ভিস অভিজ্ঞতা।</span>
+      </p>
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>
+          <div><b><span class="en">Trained technicians</span><span class="bn">প্রশিক্ষিত টেকনিশিয়ান</span></b>
+          <span><span class="en">Each repair is done by a technician who knows the brand and model.</span><span class="bn">প্রতিটি মেরামত করেন ব্র্যান্ড ও মডেল সম্পর্কে জানা টেকনিশিয়ান।</span></span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>
+          <div><b><span class="en">Clear pricing</span><span class="bn">স্পষ্ট মূল্য</span></b>
+          <span><span class="en">You are told the repair and parts cost before work begins.</span><span class="bn">কাজ শুরুর আগেই মেরামত ও যন্ত্রাংশের খরচ জানানো হয়।</span></span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>
+          <div><b><span class="en">Genuine parts</span><span class="bn">নির্ভরযোগ্য যন্ত্রাংশ</span></b>
+          <span><span class="en">Quality parts so the repair lasts.</span><span class="bn">মানসম্মত যন্ত্রাংশ, যাতে মেরামত টেকসই হয়।</span></span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>
+          <div><b><span class="en">We listen to feedback</span><span class="bn">আপনার মতামত গুরুত্বপূর্ণ</span></b>
+          <span><span class="en">Tell us how we did and we will follow up.</span><span class="bn">আমাদের সেবা কেমন লাগল জানান, আমরা পদক্ষেপ নেব।</span></span></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2><span class="en">Book a service</span><span class="bn">সার্ভিস বুক করুন</span></h2>
+      <p class="lead">
+        <span class="en">Call or email us with your appliance type and the problem.</span>
+        <span class="bn">যন্ত্রের ধরন ও সমস্যা জানিয়ে আমাদের কল বা ইমেইল করুন।</span>
+      </p>
+      <div class="rows">
+        <div>
+          <small><span class="en">Phone</span><span class="bn">ফোন</span></small>
+          <!-- Replace the number below with your business phone -->
+          <a href="tel:+8801XXXXXXXXX">+880 1XXX-XXXXXX</a>
+        </div>
+        <div>
+          <small><span class="en">Customer feedback</span><span class="bn">গ্রাহক মতামত</span></small>
+          <a href="mailto:feedback.eac@gmail.com">feedback.eac@gmail.com</a>
+        </div>
+        <div>
+          <small><span class="en">Service centre</span><span class="bn">সার্ভিস সেন্টার</span></small>
+          <p><span class="en">Narayangonj</span><span class="bn">নারায়ণগঞ্জ</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Expert Appliance Care. <span class="en">All rights reserved.</span><span class="bn">সর্বস্বত্ব সংরক্ষিত।</span></div>
+</footer>
+
+<script>
+(function(){
+  var body=document.body, buttons=document.querySelectorAll('.lang button');
+  function set(l){
+    body.setAttribute('data-lang',l);
+    document.documentElement.lang=l;
+    buttons.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l?'true':'false')});
+    try{localStorage.setItem('eac-lang',l)}catch(e){}
+  }
+  buttons.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.set)})});
+  var saved=null;try{saved=localStorage.getItem('eac-lang')}catch(e){}
+  if(saved==='bn'||saved==='en')set(saved);
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
